@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-"""
-# @Time   : 2022/3/22 13:45
-# @Author : 余少琪
-"""
 
 from typing import Union, Text, Dict, List
 from utils.read_files_tools.yaml_control import GetYamlData
