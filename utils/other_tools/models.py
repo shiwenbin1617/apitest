@@ -185,6 +185,7 @@ class Config(BaseModel):
     real_time_update_test_cases: bool = False
     host: Text
     app_host: Union[Text, None]
+    swagger_json_path: Text
 
 
 @unique

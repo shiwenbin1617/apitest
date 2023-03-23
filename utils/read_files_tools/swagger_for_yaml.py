@@ -4,6 +4,7 @@ from jsonpath import jsonpath
 from common.setting import ensure_path_sep
 from typing import Dict
 from ruamel import yaml
+from utils import config
 import os
 
 
@@ -18,7 +19,8 @@ class SwaggerForYaml:
         :return:
         """
         try:
-            with open('./file/test_OpenAPI.json', "r", encoding='utf-8') as f:
+            with open(f'{config.swagger_json_path}', "r", encoding='utf-8') as f:
+            # with open('./file/test_OpenAPI.json', "r", encoding='utf-8') as f:
                 row_data = json.load(f)
                 return row_data
         except FileNotFoundError:
